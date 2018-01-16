@@ -18,7 +18,7 @@ httpURLconnection步骤：
 InputStreamReader ： 是字节流与字符流之间的桥梁，能将字节流输出为字符流，并且能为字节流指定字符集，可输出一个个的字符；<br>
 8、缓存 BufferedReader br = new BufferedReader(isr);<br>
 提供通用的缓冲方式文本读取，readLine读取一个文本行， 从字符输入流中读取文本，缓冲各个字符，从而提供字符、数组和行的高效读取。<br>
-9、读取字符流  当readLine读取不为null时，字符写入line中添加到result里，读取数据，为null说明数据读取完成  while ((line = br.readLine()) != null) {result += line;}<br>
+9、读取字符流  readLine（）方法，每次读取一行，没有读取到数据就返回null。当readLine读取不为null时，读取数据，字符写入line中添加到result里，为null说明数据读取完成，没有数据读取了返回null  while ((line = br.readLine()) != null) {result += line;}<br>
 
 Json解析：
 ---------
